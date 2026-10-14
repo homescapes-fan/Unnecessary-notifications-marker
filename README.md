@@ -18,6 +18,7 @@ GitHub/
 python -m venv .venv
 source .venv/Scripts/activate
 pip install -r requirements.txt
+cp keywords.example.txt keywords.txt
 ```
 
 ## 使い方
@@ -26,7 +27,7 @@ python mark.py --dry-run   # 既読にせず、対象を表示するだけ
 python mark.py             # 既読を付ける
 ```
 
-既読にする言葉は `keywords.txt` に 1 行 1 語で書きます。`#` で始まる行と空行は無視され、全角・半角の違いは区別しません。
+既読にする言葉は `keywords.txt` に 1 行 1 語で書きます。`#` で始まる行と空行は無視され、全角・半角の違いは区別しません。`keywords.txt` は個人の設定なので GitHub には上げず、書き方の見本として `keywords.example.txt` を置いています。
 
 ## 記録
 - `marked.log`：既読にしたお知らせのタイトル

@@ -6,3 +6,6 @@ __pycache__/
 # 実行の記録（ポータルの中身なので公開しない）
 marked.log
 error.log
+
+# 既読にする言葉（個人の設定なので公開しない。見本は keywords.example.txt）
+keywords.txt

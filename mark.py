@@ -40,6 +40,8 @@ def normalize(text):
 
 def load_keywords():
     """keywords.txt を 1 行 1 語で読む。空行と # で始まる行は無視する"""
+    if not KEYWORDS.exists():
+        raise ReadError("keywords.txt がありません。keywords.example.txt をコピーして作ってください")
     words = []
     for line in KEYWORDS.read_text(encoding="utf-8").splitlines():
         line = line.strip()
