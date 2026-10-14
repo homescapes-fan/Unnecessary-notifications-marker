@@ -1,0 +1,8 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# 実行の記録（ポータルの中身なので公開しない）
+marked.log
+error.log
